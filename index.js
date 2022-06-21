@@ -31,7 +31,7 @@ function showSlides(n) {
     dots[slideIndex-1].classList.add('active');
 }
 
-// Auto scroll slide show
+// Auto scroll slideshow
 function autoSlides(){
     const slides = document.getElementsByClassName('slide');
     const dots = document.getElementsByClassName('dot');
