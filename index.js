@@ -1,5 +1,5 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+autoSlides();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -29,4 +29,25 @@ function showSlides(n) {
 
     slides[slideIndex-1].style.display = 'block';
     dots[slideIndex-1].classList.add('active');
+}
+
+// Auto scroll slide show
+function autoSlides(){
+    const slides = document.getElementsByClassName('slide');
+    const dots = document.getElementsByClassName('dot');
+
+    for(let i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+    }
+    for(i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+    }
+
+    slides[slideIndex-1].style.display = 'block';
+    dots[slideIndex-1].classList.add('active');
+
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+
+    setTimeout(autoSlides, 5000);
 }

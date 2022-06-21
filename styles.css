@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+/* Header */
+header{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2rem;
+}
+
 /* Slideshow */
 .slideshow {
     max-width: 1000px;
