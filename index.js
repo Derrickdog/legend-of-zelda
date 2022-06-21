@@ -15,7 +15,7 @@ function currentSlide(n) {
 
 // Show slides
 function showSlides(n) {
-    const slides = document.getElementsByClassName('mySlides');
+    const slides = document.getElementsByClassName('slide');
     const dots = document.getElementsByClassName('dot');
 
     if(n > slides.length) {slideIndex = 1}
@@ -26,7 +26,7 @@ function showSlides(n) {
     for(i = 0; i < dots.length; i++) {
         dots[i].classList.remove('active');
     }
-    
+
     slides[slideIndex-1].style.display = 'block';
     dots[slideIndex-1].classList.add('active');
 }

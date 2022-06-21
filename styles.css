@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 
-.slideshow-container {
+/* Slideshow */
+.slideshow {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-.mySlides {
+.slide {
     display: none;
 }
 
@@ -38,6 +39,15 @@
 }
 
 /* Dots */
+.dots {
+    position: absolute;
+    text-align: center;
+    user-select: none;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -34px;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;

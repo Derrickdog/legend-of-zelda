@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
+    <div class="slideshow">
+        <div class="slide">
             <img src="./images/img1.jpeg" style="width:100%">
         </div>
-        <div class="mySlides fade">
+        <div class="slide">
             <img src="./images/img2.jpeg" style="width:100%">
         </div>
-        <div class="mySlides fade">
+        <div class="slide">
             <img src="./images/img3.jpeg" style="width:100%">
         </div>
-        <div class="mySlides fade">
+        <div class="slide">
             <img src="./images/img4.jpeg" style="width:100%">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094</a>
         <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </div>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
