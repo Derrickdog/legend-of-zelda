@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 autoSlides();
 
 // Next/previous controls
@@ -43,11 +43,11 @@ function autoSlides(){
         dots[i].classList.remove('active');
     }
 
-    slides[slideIndex-1].style.display = 'block';
-    dots[slideIndex-1].classList.add('active');
-
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
+
+    slides[slideIndex-1].style.display = 'block';
+    dots[slideIndex-1].classList.add('active');
 
     setTimeout(autoSlides, 5000);
 }
