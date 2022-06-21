@@ -12,7 +12,7 @@
     display: none;
 }
 
-/* Buttons */
+/* Next/previous controls */
 .prev, .next {
     cursor: pointer;
     position: absolute;
