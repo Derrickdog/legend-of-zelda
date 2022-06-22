@@ -1,2 +1,2 @@
 # legend-of-zelda
-Legend of Zelda Website
+https://derrickdog.github.io/legend-of-zelda/
