@@ -51,3 +51,14 @@ function autoSlides(){
 
     setTimeout(autoSlides, 5000);
 }
+
+// Responsive
+function myFunction() {
+    const navbar = document.querySelector('.navbar');
+    if(navbar.classList.contains('responsive')){
+        navbar.classList.remove('responsive');
+    }
+    else{
+        navbar.classList.add('responsive');
+    }
+}
