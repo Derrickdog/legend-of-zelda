@@ -28,7 +28,6 @@ header img {
 /* Navbar */
 .navbar {
     overflow: hidden;
-    /* display: flex; */
     background-color: #333;
 }
 
@@ -64,7 +63,7 @@ header img {
     display: none;
     position: absolute;
     background-color: #333;
-    /* min-width: 160px; */
+    min-width: 160px;
     box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
